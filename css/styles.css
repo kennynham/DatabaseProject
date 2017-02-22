@@ -1,0 +1,88 @@
+/* General CSS */
+@import "../css/css/font-awesome.css";
+* { margin: 0; padding: 0; }
+body { 
+	position: relative;
+	background: url(/img/bg.jpg) no-repeat center center fixed; ; 
+	background-size: cover; 
+	font-family: Helvetica, sans-serif; 
+}
+header, footer { width: 100%; height: 65px; box-shadow: 0px 0px 5px 0px; background: rgba(85, 78, 71, 0.65)}
+footer {  }
+header img { float: left;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 165px; 
+}
+h1, h2 {
+	font-size: 24px;
+	text-align: center;
+}
+
+/* Classes and IDs */
+.wrapper { width: 100%; height: 100%; }
+
+.choices { margin: 10px auto; text-align:center; }
+.choices label { padding: 5px 15px;
+    color: white;
+    font-size: 16px;
+    background: #FF8F3F;
+    margin: 5px;
+    border-radius: 2px;
+    border: 1px solid #A95600;
+}
+.choices label:hover { background: #FFAE4A; color: #4C4C4C; }
+
+.forms { 
+	margin: 25px auto;
+    width: 350px;
+    padding: 25px;
+	box-shadow: 0px 0px 5px 0px;
+	background: rgba(85, 78, 71, 0.65);  
+}
+.forms h2 { color: white; text-shadow: 0px 0px 1px; }
+.login, .create { display:none; }
+.login input, .create input, .upload input, .upload select { 
+	margin: 5px auto;
+    padding: 0px 10px;
+    border-radius: 5px;
+    width: 90%;
+    height: 25px;
+    font-family: arial;
+    font-size: 15px;
+    border: solid 1px #dcdcdc;
+	transition: box-shadow 0.3s, border 0.3s;
+	background: white;
+}
+.upload select { width: 96%; }
+.login input:focus { 
+	border: solid 1px #00CFFF;
+  	box-shadow: 0 0 5px 1px #2B95AB;
+}
+.gallery { margin: 25px auto 70px;width: 60%;padding: 25px; box-shadow: 0px 0px 5px 0px;background: rgba(85, 78, 71, 0.65); }
+.gallery_head { font-size: 25px; height: 50px; margin: 10px 0; color: white; border-bottom: 1px solid rgba(255, 255, 255, 0.33); }
+.gallery_head h3 { float: left; }
+.gallery_head i { float: right; color: white; font-size: 30px; margin-right: 20px; }
+
+.gallery_body { margin: 10px 0; }
+.gallery_body div { width: 230px; margin: 25px 15px; display: inline-block; box-shadow: 0px 0px 5px 0px; }
+.gallery_body div img { width: 100%; }
+
+.userbox { position: relative; float:right; color: white; font-size: 30px; height: 100%; width: 80px; border-left: 1px solid rgba(255, 255, 255, 0.33); text-align: center;}
+.userbox i { padding: 15px 25px; cursor: hand; cursor: pointer; }
+.userbox p { font-size: 12px; margin-top: -12px;}
+.userbox .dropdown { display: none; position: absolute; width: 50px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); padding: 12px 16px;margin: 5px 0; font-size: 15px; right: 0px; background: rgba(85, 78, 71, 0.65);}
+.userbox .dropdown a { color: white; }
+.userbox:hover .dropdown { display: block; }
+
+input[type=submit] { width: 96%; background: #49CE6F; border: none;}
+input[type=submit]:hover { background: #54E87F;}
+
+
+/* States */
+.active { background: #FFAE4A !important; color: #4C4C4C !important; }
+.error { background: rgba(255, 0, 0, 0.45); position: absolute; height: 65px; margin: 0px auto; width: 100%; color: white;}
+.success { background: rgba(86, 255, 0, 0.24); position: absolute; height: 65px; margin: 0px auto; width: 100%; color: white;}
+
+#stars { color: yellow; }
